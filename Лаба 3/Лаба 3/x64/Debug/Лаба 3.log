@@ -1,0 +1,7 @@
+﻿  Работа.c
+C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\Работа.c(13,17): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\Работа.c(54,19): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\Работа.c(55,15): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\Работа.c(56,15): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\Работа.c(73,27): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Лаба 3.vcxproj -> C:\Users\student\Desktop\М.А.Бабаров_бИД262\Лаба 3\x64\Debug\Лаба 3.exe
