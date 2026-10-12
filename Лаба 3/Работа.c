@@ -4,29 +4,34 @@
 
 #include <stdio.h>
 
-#define      D       2,54
+#define      D       2.54
 
-#define      Pul       2,32166
+#define      Pul       2.32166
 
-#define      Starlit       2,7076
+#define      Starlit       2.7076
 
 #define      Sea       1852
 
-work1();
-work2();
-work21();
-work3();
-home();
+int work1();
+int work2();
+int work21();
+int work3();
+int home();
 
 int main()
 {
+	setlocale(LC_ALL, "RUS");
+	work1();
 	work2();
+	work21();
+	work3();
+	home();
 	return 0;
 }
 
 int work1()
 {
-	setlocale(LC_ALL, "RUS");
+	
 	int num1, num2,num3;
 	puts("Введите число");
 	scanf("%d", &num1);
@@ -38,13 +43,12 @@ int work1()
 	scanf("%d", &num3);
 	printf("Введено значение %d", num2);
 	printf("\n");
-	printf("%d - сложение,\n%d - вычитание,\n%d - умножение,\n%d - остаток от деления", num1 + num2 + num3, num1 - num2, num1 * num2, num2 % num1);
+	printf("%d - сложение,\n%d - вычитание,\n%d - умножение,\n%d - остаток от деления\n", num1 + num2 + num3, num1 - num2, num1 * num2, num2 % num1);
 	return 0;
 }
 
 int work2() 
 {
-	setlocale(LC_ALL, "RUS");
 
 	int dym;
 
@@ -52,9 +56,9 @@ int work2()
 
 	printf("введите количество Дюймов");
 	scanf("%d", &dym);
-	engres = dym * D + 0.1 * (dym * D);
-	espres = dym * Pul + 0.1 * (dym * Pul);
-	litres = dym * Starlit + 0.1 * (dym * Starlit);
+	engres = dym * D;
+	espres = dym * Pul;
+	litres = dym * Starlit;
 
 	printf("%d Английских дюймов - это %.1f см\n", dym, engres);
 	printf("%d Испанских дюймов - это %.1f см\n", dym, espres);
@@ -63,7 +67,6 @@ int work2()
 }
 int work21()
 {
-	setlocale(LC_ALL, "RUS");
 
 	int miles;
 
@@ -79,7 +82,6 @@ int work21()
 int work3()
 {
 	int a1, b1;
-	setlocale(LC_ALL, "RUS");
 	printf("Число a = ");
 	scanf("%d", &a1);
 	printf("Число b = ");
@@ -98,7 +100,6 @@ int work3()
 int home()
 {
 	int len, wid;
-	setlocale(LC_ALL, "RUS");
 	printf("введите длину");
 	scanf("%d", &len);
 	printf("введите ширину");
